@@ -1,0 +1,127 @@
+.featured {
+  height: 100vh;
+}
+
+.featured-vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured-horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4.375rem;
+  padding-left: 2rem;
+  padding-bottom: 10rem;
+}
+
+.width {
+  max-width: 40%;
+}
+.featured-name {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.featured-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.3rem;
+}
+
+.featured-points,
+.featured-year,
+.featured-seasons {
+  font-size: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.featured-points {
+  color: #46d369;
+}
+
+.featured-description {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #999;
+}
+
+.featured-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.featured-watchBtn,
+.featured-myListBtn {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+.featured-watchBtn:hover,
+.featured-myListBtn:hover {
+  opacity: 0.7;
+}
+
+.featured-watchBtn {
+  background: #fff;
+  color: #000;
+}
+
+.featured-myListBtn {
+  background: #333;
+  color: #fff;
+}
+
+.featured-genres {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: #999;
+}
+
+@media screen and (max-width: 768px) {
+  .width {
+    max-width: 40%;
+  }
+  .featured-name {
+    font-size: 1.8rem;
+  }
+  .featured-description {
+    font-size: 0.9rem;
+  }
+  .featured-points,
+  .featured-year,
+  .featured-seasons {
+    font-size: 0.7rem;
+  }
+  .featured-watchBtn,
+  .featured-myListBtn {
+    height: 32px;
+    font-size: 0.8rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .featured-genres {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .width {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+header {
+  width: 100%;
+  height: 4.375rem;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  transition: all ease 0.5s;
+}
+
+header.black {
+  background: #141414;
+}
+
+.header-logo {
+  width: 130px;
+}
+
+.header-user {
+  width: 35px;
+  border-radius: 3px;
+}
+
+.header-user img,
+.header-logo img {
+  width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .header-logo {
+    width: 90px;
+  }
+
+  .header-user {
+    width: 25px;
+    border-radius: 3px;
+  }
+}
